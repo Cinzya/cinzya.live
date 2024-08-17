@@ -9,27 +9,30 @@
       src="https://umami.cinzya.gg/script.js"
       data-website-id="6ebb3197-5f16-4b8d-a7ad-bbaf63e1f98d"
     ></script>
-    <title>Cinzya Reel</title>
+    <title>Cinzya - Reel</title>
     <style>
       body {
         margin: 0;
         padding: 0;
+        width: 100vw;
+        height: 100vh;
         background-color: black;
         display: flex;
         justify-content: center;
       }
 
       video {
-        height: 100vh;
+        min-height: 100%;
+        min-width: 100%;
+
+        width: auto;
+        height: auto;
       }
     </style>
   </head>
   <body>
-    <video controls id="video-full">
-      <source
-        src="https://cdn.discordapp.com/attachments/399306104162615316/1272805909655060490/Cinzya_Sizzle_Reel.mp4?ex=66bc5060&is=66bafee0&hm=b4b799d80972df0748965ecd64aa8b19bd405b787ceb1ea9e669325e5758ffc7&"
-        type="video/mp4"
-      />
+    <video controls preload="metadata" id="video-full">
+      <source src="./reel.mp4" type="video/mp4" />
     </video>
   </body>
 </html>
